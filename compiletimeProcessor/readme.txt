@@ -1,0 +1,5 @@
+编译时注解处理器
+
+AbstractProcessor是在javax包中,而android 核心库中不存在该包,因此在选择创建moudle时
+
+需要选择java Library

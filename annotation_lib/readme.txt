@@ -1,0 +1,9 @@
+APT AnnotationProcessorTool 注解处理器
+
+APT详解
+
+apt为何如此重要呢？现在越来越多的第三方库使用了apt技术，Dagger2、ButterKnife、ARouter等。
+在编译时根据annotation生成相应的逻辑代码，动态生成的Java class文件给开发还来了很大的便利。
+
+注解处理器对源代码文件进行检测，找出其中的Annotation，Annotation处理器在处理Annotaion时
+可以根据源文件中的Annotation生成额外的源文件，并编译成class文件。

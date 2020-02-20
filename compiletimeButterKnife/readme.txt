@@ -1,0 +1,3 @@
+编译时通过编译时注解处理器生成中间代码实现工具类，实现findViewById的功能，
+并加入到原有的代码中。使得Activity中不需要findViewById。前提是生成的代码
+和Activity在同一个包名下。
