@@ -29,6 +29,47 @@ import javax.lang.model.element.TypeElement;
 import javax.lang.model.util.Elements;
 import javax.tools.Diagnostic;
 
+/**
+ *
+ *
+ * javapoet 中的相关知识点
+ * 2.1.1 几个常用的类
+ * MethodSpec 代表一个构造函数或方法声明。
+ * TypeSpec 代表一个类，接口，或者枚举声明
+ * FieldSpec 代表一个成员变量，一个字段声明。
+ * JavaFile包含一个顶级类的Java文件。
+ * ParameterSpec 用来创建参数
+ * AnnotationSpec 用来创建注解
+ * TypeName 类型，如在添加返回值类型是使用 TypeName.VOID
+ * ClassName 用来包装一个类
+ *
+ * 2.1.2 javapoet 常用的API
+ *
+ * addStatement() 方法负责分号和换行
+ * beginControlFlow() + endControlFlow() 需要一起使用，提供换行符和缩进。
+ * addCode() 以字符串的形式添加内
+ * returns 添加返回值类型
+ * .constructorBuilder() 生成构造器函数
+ * .addAnnotation 添加注解
+ * addSuperinterface 给类添加实现的接口
+ * superclass 给类添加继承的父类
+ * ClassName.bestGuess(“类全名称”) 返回ClassName对象，这里的类全名称表示的类必须要存在，会自动导入相应的包
+ * ClassName.get(“包名”，”类名”) 返回ClassName对象，不检查该类是否存在
+ * TypeSpec.interfaceBuilder(“HelloWorld”)生成一个HelloWorld接口
+ * MethodSpec.constructorBuilder() 构造器
+ * addTypeVariable(TypeVariableName.get(“T”, typeClassName))
+ * 会给生成的类加上泛型
+ *
+ * 2.1.3 占位符
+ * $L代表的是字面量
+ * $S for Strings
+ * $N for Names(我们自己生成的方法名或者变量名等等)
+ * $T for Types
+ * 这里的$T，在生成的源代码里面，也会自动导入你的类。
+ * ————————————————
+ * 原文链接：https://blog.csdn.net/qq_26376637/article/details/52374063
+ */
+
 public class ButterKnifeProcessor extends AbstractProcessor {
 
     /**

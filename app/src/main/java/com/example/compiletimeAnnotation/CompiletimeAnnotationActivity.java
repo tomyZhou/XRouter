@@ -14,6 +14,7 @@ import com.example.compiletimebutterknife.ButterKnife;
 import com.example.compiletimebutterknife.ContentView;
 import com.example.compiletimebutterknife.OnClick;
 import com.example.xrouter.R;
+import com.example.xrouter.XRouter;
 
 @ContentView(R.layout.activity_custom_butter_knife)
 public class CompiletimeAnnotationActivity extends AppCompatActivity implements View.OnClickListener {
@@ -45,6 +46,7 @@ public class CompiletimeAnnotationActivity extends AppCompatActivity implements 
         switch (view.getId()) {
             case R.id.tv_hello:
                 Toast.makeText(CompiletimeAnnotationActivity.this, "helloClicked", 0).show();
+                XRouter.getInstance().jump("login/login", null);
                 break;
             case R.id.iv_image:
                 Toast.makeText(CompiletimeAnnotationActivity.this, "imageClicked", 0).show();

@@ -12,9 +12,12 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/compiletimeButterKnife" />
             <option value="$PROJECT_DIR$/compiletimeProcessor" />
+            <option value="$PROJECT_DIR$/login" />
+            <option value="$PROJECT_DIR$/member" />
             <option value="$PROJECT_DIR$/runtimeButterknife" />
             <option value="$PROJECT_DIR$/runtimeProcessor" />
             <option value="$PROJECT_DIR$/xRouter" />
+            <option value="$PROJECT_DIR$/xRouterProcessor" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

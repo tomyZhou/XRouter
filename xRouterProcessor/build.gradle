@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.squareup:javapoet:1.11.1'
+
+    implementation project(':annotation_lib')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

@@ -10,8 +10,8 @@ dependencies {
      * 实际上，上面两个依赖库并不是必须的，可以通过硬编码代码生成规则来替代，
      * 但还是建议使用这两个库，因为这样代码的可读性会更高，且能提高开发效率
      */
-    implementation 'com.google.auto.service:auto-service:1.0-rc2'
-    implementation 'com.squareup:javapoet:1.11.1'
+    api 'com.google.auto.service:auto-service:1.0-rc2'
+    api 'com.squareup:javapoet:1.11.1'
 }
 
 tasks.withType(JavaCompile) {

@@ -1,1 +1,1 @@
-include ':app', ':xRouter', ':annotation_lib', ':runtimeProcessor', ':runtimeButterknife', ':compiletimeProcessor', ':compiletimeButterKnife'
+include ':app', ':annotation_lib', ':runtimeProcessor', ':runtimeButterknife', ':compiletimeProcessor', ':compiletimeButterKnife', ':login', ':member', ':xRouter', ':xRouterProcessor'
