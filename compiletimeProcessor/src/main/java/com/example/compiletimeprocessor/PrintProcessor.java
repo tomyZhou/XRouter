@@ -13,6 +13,15 @@ import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 import javax.tools.Diagnostic;
 
+/**
+ * ProxyGenerator 这个类是rt.jar 里面的，sun.misc.ProxyGenerator
+ *
+ * android项目里面没有这个类，所以需要建立java library项目
+ *
+ * AbstractProcessor 编译时注解处理器也是rt.jar中的javax.annotation.processing.AbstractProcessor里的，
+ *
+ * 所以也需要建立java library
+ */
 public class PrintProcessor extends AbstractProcessor {
 
     private Messager mMessager;
